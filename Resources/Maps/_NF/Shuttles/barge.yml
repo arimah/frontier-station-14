@@ -3110,7 +3110,7 @@ entities:
       rot: 3.141592653589793 rad
       pos: 0.5,-19.5
       parent: 70
-- proto: GasPressurePump
+- proto: GasPressurePumpOnMax
   entities:
   - uid: 306
     components:
@@ -3640,7 +3640,7 @@ entities:
     - type: Transform
       pos: 5.5,-0.5
       parent: 70
-- proto: PortableGeneratorPacman
+- proto: PortableGeneratorPacmanShuttle
   entities:
   - uid: 276
     components:
