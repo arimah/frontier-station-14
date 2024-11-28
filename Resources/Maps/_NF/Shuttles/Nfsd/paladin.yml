@@ -188,7 +188,7 @@ entities:
     - type: GasTileOverlay
     - type: RadiationGridResistance
     - type: BecomesStation
-      id: Hospitaller
+      id: Paladin
 - proto: AirCanister
   entities:
   - uid: 120
