@@ -57,42 +57,6 @@
     job_id: PilotInterview
 
 - type: entity
-  id: SpawnPointNFPirate
-  parent: SpawnPointJobBase
-  name: pirate
-  suffix: Frontier
-  components:
-  - type: SpawnPoint
-    job_id: NFPirate
-  - type: Sprite
-    sprite: Structures/Decoration/banner.rsi
-    state: banner-red
-
-- type: entity
-  id: SpawnPointNFPirateFirstMate
-  parent: SpawnPointJobBase
-  name: pirate first mate
-  suffix: Frontier
-  components:
-  - type: SpawnPoint
-    job_id: NFPirateFirstMate
-  - type: Sprite
-    sprite: Structures/Decoration/banner.rsi
-    state: banner-red
-
-- type: entity
-  id: SpawnPointNFPirateCaptain
-  parent: SpawnPointJobBase
-  name: pirate captain
-  suffix: Frontier
-  components:
-  - type: SpawnPoint
-    job_id: NFPirateCaptain
-  - type: Sprite
-    sprite: Structures/Decoration/banner.rsi
-    state: banner-red
-
-- type: entity
   id: SpawnPointStc
   parent: SpawnPointJobBase
   name: station traffic controller

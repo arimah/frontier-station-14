@@ -205,9 +205,9 @@ PoweredlightColoredFrostyBlue: PoweredlightCyan
 PoweredlightColoredBlack: PoweredlightUltraviolet
 
 # 2025-01-18 Pirate rename
-SpawnPointPirate: SpawnPointNFPirate
-SpawnPointPirateFirstMate: SpawnPointNFPirateFirstMate
-SpawnPointPirateCaptain: SpawnPointNFPirateCaptain
+#SpawnPointPirate: SpawnPointNFPirate
+#SpawnPointPirateFirstMate: SpawnPointNFPirateFirstMate
+#SpawnPointPirateCaptain: SpawnPointNFPirateCaptain
 
 # 2025-02-01 MEMP
 M_Emp: MobileEmpGenerator
@@ -646,3 +646,8 @@ SpawnMobWizFedWizardRedHardsuit: SpawnNFMobWizardRedAdept
 SpawnMobWizFedWizardVioletHardsuit: SpawnNFMobWizardPurpleAdept
 SpawnMobWizFedWizardBrickHardsuit: SpawnNFMobWizardBrickMaster
 SpawnMobWizFedWizardSoapHardsuit: SpawnNFMobWizardPurpleMaster
+
+# 2026-01-05 Pirates removed
+SpawnPointPirate: null
+SpawnPointPirateFirstMate: null
+SpawnPointPirateCaptain: null

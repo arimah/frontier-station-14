@@ -15,25 +15,8 @@
     - SmugglingEventScheduler
     - NFRoundstartVariation
 
-- type: gamePreset
-  id: NFPirate
-  alias:
-    - nfpirate
-    - pirate
-  name: nf-pirate-title
-  description: nf-pirate-description
-  showInVote: true
-  rules:
-    - NFAdventure
-    - NFBasicStationEventScheduler
-    - BluespaceEventScheduler
-    - BluespaceDungeonEventScheduler
-    - BluespaceSalvageEventScheduler
-    - SmugglingEventScheduler
-    - NFRoundstartVariation
-
 # Test preset: intended to be close enough to upstream stuff but should be
-#              quicker to setup and teardown than adventure/pirate
+#              quicker to setup and teardown than adventure
 - type: gamePreset
   id: NFTest
   alias:

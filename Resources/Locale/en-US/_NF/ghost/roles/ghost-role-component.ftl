@@ -11,10 +11,6 @@ ghost-role-information-clippy-description = The Station Representative's loyal w
 ghost-role-information-clugg-name = Clugg
 ghost-role-information-clugg-description = Ugg! Clugg love eat meat. Find new home off space rock, make big hunt.
 
-ghost-role-information-clarpy-name = Clarpy
-ghost-role-information-clarpy-description = Avast ye mail! wanted by Nanotrasen for crimes against mice.
-ghost-role-information-clarpy-rules = You are an old [color={role-type-pirate-color}][bold]{role-type-pirate-name}[/bold][/color] cat, help out the other pirates, and remember to take your meds.
-
 ghost-role-information-cult-cat-name = Blood Cult Cat
 ghost-role-information-cult-cat-description = Founded the Blood Cult out of boredom.
 ghost-role-information-cult-cat-rules = You are a [color={role-type-free-agent-color}][bold]{role-type-free-agent-name}[/bold][/color] and free to choose your course of actions.

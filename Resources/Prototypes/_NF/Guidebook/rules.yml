@@ -18,7 +18,6 @@
   - FrontierRule10
   - FrontierRule11
   - FrontierRule12
-  - FrontierRule13
 
 - type: guideEntry
   id: FrontierRuleZeroTolerance
@@ -78,28 +77,22 @@
   id: FrontierRule9
   name: guide-entry-frontier-rule-9
   ruleEntry: true
-  text: "/ServerInfo/_NF/Guidebook/Rules/9_Pirates.xml"
+  text: "/ServerInfo/_NF/Guidebook/Rules/9_Crimes.xml"
 
 - type: guideEntry
   id: FrontierRule10
   name: guide-entry-frontier-rule-10
   ruleEntry: true
-  text: "/ServerInfo/_NF/Guidebook/Rules/10_Crimes.xml"
+  text: "/ServerInfo/_NF/Guidebook/Rules/10_Silicons.xml"
 
 - type: guideEntry
   id: FrontierRule11
   name: guide-entry-frontier-rule-11
   ruleEntry: true
-  text: "/ServerInfo/_NF/Guidebook/Rules/11_Silicons.xml"
+  text: "/ServerInfo/_NF/Guidebook/Rules/11_Security.xml"
 
 - type: guideEntry
   id: FrontierRule12
   name: guide-entry-frontier-rule-12
   ruleEntry: true
-  text: "/ServerInfo/_NF/Guidebook/Rules/12_Security.xml"
-
-- type: guideEntry
-  id: FrontierRule13
-  name: guide-entry-frontier-rule-13
-  ruleEntry: true
-  text: "/ServerInfo/_NF/Guidebook/Rules/13_Command.xml"
+  text: "/ServerInfo/_NF/Guidebook/Rules/12_Command.xml"

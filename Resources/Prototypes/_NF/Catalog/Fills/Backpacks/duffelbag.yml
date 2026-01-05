@@ -70,19 +70,6 @@
       - id: NFGrenadeEMP
         amount: 10
 
-# Not a duffelbag, but stored with other uplink-related backpacks
-- type: entity
-  parent: ClothingBackpackSatchelLeather
-  id: ClothingBackpackPirateBundle
-  suffix: Filled, Pirate
-  components:
-    - type: StorageFill
-      contents:
-        - id: BoxSurvival
-        - id: Cutlass
-        - id: NFWeaponRevolverPirate
-        - id: ClothingEyesEyepatch
-
 #Departmental EVA bundles
 - type: entity
   parent: [ NFClothingDuffel, StorageFillEVASuitContractor ]

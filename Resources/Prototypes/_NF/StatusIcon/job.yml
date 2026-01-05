@@ -64,32 +64,6 @@
     state: valet
   jobName: job-name-valet
 
-# region Pirates
-
-- type: jobIcon
-  parent: JobIcon
-  id: JobIconNFPirate
-  icon:
-    sprite: /Textures/_NF/Interface/Misc/job_icons.rsi
-    state: pirate
-  jobName: job-name-nf-pirate
-
-- type: jobIcon
-  parent: JobIcon
-  id: JobIconNFPirateCaptain
-  icon:
-    sprite: /Textures/_NF/Interface/Misc/job_icons.rsi
-    state: piratecaptain
-  jobName: job-name-nf-pirate-captain
-
-- type: jobIcon
-  parent: JobIcon
-  id: JobIconNFPirateFirstMate
-  icon:
-    sprite: /Textures/_NF/Interface/Misc/job_icons.rsi
-    state: piratefirstmate
-  jobName: job-name-nf-pirate-first-mate
-
 # region NFSD
 
 - type: jobIcon

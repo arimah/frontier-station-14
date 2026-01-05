@@ -7,7 +7,7 @@ using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototy
 namespace Content.Shared._NF.Medical.Prototypes;
 
 /// <summary>
-/// This is a prototype for a pirate bounty, a set of items
+/// This is a prototype for a medical bounty, a set of items
 /// that must be sold together in a labeled container in order
 /// to receive a reward in doubloons.
 /// </summary>

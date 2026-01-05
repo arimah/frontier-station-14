@@ -1,13 +1,4 @@
 - type: entity
-  id: PaperWrittenPirateScribbles
-  name: missing soda
-  suffix: MappedPaper
-  parent: Paper
-  components:
-  - type: Paper
-    content: book-text-pirate-scribbles
-
-- type: entity
   id: PaperWrittenFrontierFridge
   name: fridge policy
   suffix: MappedPaper
@@ -78,7 +69,7 @@
       Hey boss,
 
       The crack in the plasma chamber's gettin' bigger, and I'm worried about the containment unit. What happens if the glass breaks?
-        
+
 - type: entity
   id: PaperWrittenPartyProcedure
   name: official party preparation procedure
@@ -97,7 +88,7 @@
       [color=#1a6295]◥[bold]N[/bold]◣ [bold]Department of Recreation[/bold][/color]
       [color=#1a6295]‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[/color]
       [head=3]Official Party Preparation Procedure[/head]
-        
+
       Thank you for purchasing your official, NT-approved party crate.
 
       The first step to any time-efficient party is preparedness. Make sure to consult a caterer or your NT Guidebook for a recipe to make a tasty cake.

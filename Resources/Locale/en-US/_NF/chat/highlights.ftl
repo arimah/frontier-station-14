@@ -16,6 +16,3 @@ highlights-public-affairs-liaison = Liaison, "PAL", "NFSD"
 highlights-sheriff = Sheriff, "NFSD"
 
 highlights-prisoner = Prisoner
-highlights-pirate = Pirate
-highlights-pirate-first-mate = Pirate, First Mate
-highlights-pirate-captain = Pirate, "Cap", Captain

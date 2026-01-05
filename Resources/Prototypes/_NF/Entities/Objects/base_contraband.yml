@@ -51,7 +51,6 @@
     severity: Class2Expedition
     turnInValues: &oneFUC
       FrontierUplinkCoin: 1
-      Doubloon: 1
 
 - type: entity
   parent: BaseC2ContrabandUnredeemable
@@ -61,7 +60,6 @@
   - type: Contraband
     turnInValues: &noFUCs
       FrontierUplinkCoin: 0
-      Doubloon: 0
 # endregion
 
 # region Class 3 Objects
@@ -82,7 +80,6 @@
     severity: Class3Expedition
     turnInValues:
       FrontierUplinkCoin: 2
-      Doubloon: 2
 
 - type: entity
   parent: BaseC3ContrabandUnredeemable
@@ -218,18 +215,5 @@
   components:
   - type: Contraband
     severity: Class3MobConstruct
-    hideCarryStatus: true
-# endregion
-
-# region Miscellaneous
-- type: entity
-  id: BasePirateTarget
-  abstract: true
-  components:
-  - type: Contraband
-    severity: PirateTarget
-    # Security and heads only
-    turnInValues:
-      Doubloon: 1
     hideCarryStatus: true
 # endregion

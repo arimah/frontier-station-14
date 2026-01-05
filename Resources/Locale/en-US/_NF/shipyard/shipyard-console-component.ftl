@@ -60,7 +60,6 @@ shipyard-console-class-Civilian = Civilian
 shipyard-console-class-Kitchen = Kitchen
 # Antag
 shipyard-console-class-Syndicate = Syndicate
-shipyard-console-class-Pirate = Pirate
 # NFSD
 shipyard-console-class-Capital = Capital
 shipyard-console-class-Detainment = Detainment

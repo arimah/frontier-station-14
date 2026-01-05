@@ -400,8 +400,6 @@
     tags:
     - RawMaterial
     - Diamond
-  - type: PirateBountyItem # Frontier
-    id: MaterialDiamond # Frontier
 
 - type: entity
   parent: MaterialDiamond

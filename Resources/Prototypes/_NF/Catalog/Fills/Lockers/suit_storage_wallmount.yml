@@ -248,11 +248,6 @@
   id: SuitStorageWallmountEVASyndicate
   parent: [SuitStorageWallmount, SuitStorageEVASyndicate]
 
-#Pirate EVA
-- type: entity
-  id: SuitStorageWallmountEVAPirate
-  parent: [SuitStorageWallmount, SuitStorageEVAPirate]
-
 #NTSRA Voidsuit
 - type: entity
   id: SuitStorageWallmountNTSRA
@@ -313,11 +308,6 @@
 - type: entity
   id: SuitStorageWallmountSyndie
   parent: [SuitStorageWallmount, SuitStorageSyndie]
-
-#Pirate Captain's hardsuit
-- type: entity
-  id: SuitStorageWallmountPirateCap
-  parent: [SuitStorageWallmount, SuitStoragePirateCap]
 
 #Wizard
 - type: entity

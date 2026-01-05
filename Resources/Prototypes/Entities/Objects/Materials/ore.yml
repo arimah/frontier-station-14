@@ -52,8 +52,6 @@
     tags:
     - Ore
     - OreGold
-  - type: PirateBountyItem # Frontier
-    id: Gold # Frontier
 
 - type: entity
   parent: GoldOre

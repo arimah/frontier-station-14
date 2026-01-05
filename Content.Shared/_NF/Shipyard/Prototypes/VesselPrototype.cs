@@ -133,7 +133,6 @@ public enum VesselClass : byte
     Kitchen,
     // Antag ships
     Syndicate,
-    Pirate,
 }
 
 public enum VesselEngine : byte

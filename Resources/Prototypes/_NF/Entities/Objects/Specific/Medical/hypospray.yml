@@ -33,8 +33,6 @@
     maxFillLevels: 2
     fillBaseName: hypo_fill
     solutionName: hypospray
-  - type: PirateBountyItem
-    id: HypoMini
 
 - type: entity
   name: NTCS-102 hypospray

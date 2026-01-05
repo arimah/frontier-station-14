@@ -111,8 +111,6 @@
       tags:
       - Ore
       - ArtifactFragment
-  - type: PirateBountyItem
-    id: NFMagnetBoxOre
 
 #region construction box
 - type: entity

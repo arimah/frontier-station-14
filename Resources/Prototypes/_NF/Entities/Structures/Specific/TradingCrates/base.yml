@@ -124,8 +124,6 @@
     allowedShipyardTypes:
     - Syndicate
     - BlackMarket
-  - type: PirateBountyItem
-    id: ContrabandCrate
   - type: AdditionalPalletCurrency
     currency: Telecrystal
     prob: 0.134

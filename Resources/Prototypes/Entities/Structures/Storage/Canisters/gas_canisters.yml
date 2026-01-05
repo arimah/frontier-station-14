@@ -497,8 +497,6 @@
         - !type:DumpCanisterBehavior
 #    - type: Lock # Frontier
 #      locked: true # Frontier
-    - type: PirateBountyItem # Frontier
-      id: PlasmaCanister # Frontier
 
 - type: entity
   parent: GasCanister

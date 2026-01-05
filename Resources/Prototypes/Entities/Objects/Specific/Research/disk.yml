@@ -70,8 +70,6 @@
     price: 0.01 # Frontier 100<0.01 - research points are a means to an end, not an end of their own
   - type: StealTarget
     stealGroup: TechnologyDisk
-  - type: PirateBountyItem # Frontier
-    id: TechnologyDisk # Frontier
 
 - type: entity
   parent: TechnologyDisk

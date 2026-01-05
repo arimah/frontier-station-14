@@ -398,50 +398,6 @@
             ]
         },
         {
-            "name": "piratebounty",
-            "directions": 4,
-            "delays": [
-                [
-                    0.5,
-                    0.5
-                ],
-                [
-                    0.5,
-                    0.5
-                ],
-                [
-                    0.5,
-                    0.5
-                ],
-                [
-                    0.5,
-                    0.5
-                ]
-            ]
-        },
-        {
-            "name": "piratebounty_pad",
-            "directions": 4,
-            "delays": [
-                [
-                    0.5,
-                    0.5
-                ],
-                [
-                    0.5,
-                    0.5
-                ],
-                [
-                    0.5,
-                    0.5
-                ],
-                [
-                    0.5,
-                    0.5
-                ]
-            ]
-        },
-        {
             "name": "solar_screen",
             "directions": 4,
             "delays": [

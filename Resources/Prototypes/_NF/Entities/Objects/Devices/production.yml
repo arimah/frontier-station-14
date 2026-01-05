@@ -166,25 +166,6 @@
     - type: MachineBoard
       prototype: NfsdTechFab
 
-- type: entity
-  id: PirateTechFabCircuitboardNF
-  parent: BaseMachineCircuitboard
-  name: pirate techfab machine board
-  description: A machine printed circuit board for a pirate techfab.
-  components:
-    - type: Sprite
-      sprite: _NF/Objects/Misc/module.rsi
-      state: pirate
-    - type: MachineBoard
-      prototype: PirateTechFab
-      requirements:
-        MatterBin: 2
-        Manipulator: 2
-      tagRequirements:
-        GlassBeaker:
-          amount: 2
-          defaultPrototype: Beaker
-
 # Thrusters
 - type: entity
   id: ThrusterSecurityMachineCircuitboard
@@ -607,18 +588,6 @@
     state: command
   - type: MachineBoard
     prototype: UniformPrinterStaff
-
-- type: entity
-  id: PirateStitcherCircuitboard
-  parent: [UniformPrinterMachineCircuitboard, BaseC3PirateContrabandNoValue]
-  name: pirate stitcher machine board
-  description: Clearly brand new.
-  components:
-  - type: Sprite
-    sprite: _NF/Objects/Misc/module.rsi
-    state: pirate_stitcher
-  - type: MachineBoard
-    prototype: PirateStitcher
 
 # Removed from upstream definitions
 - type: entity

@@ -101,8 +101,6 @@
     - On
     - Off
     - Toggle
-  - type: PirateBountyItem
-    id: Thruster
   # End Frontier
 
 - type: entity
@@ -208,8 +206,6 @@
     damageModifierSet: Electronic
   - type: StaticPrice
     price: 300 # Frontier - 2000<300
-  - type: PirateBountyItem # Frontier
-    id: Gyroscope # Frontier
 
 - type: entity
   id: GyroscopeUnanchored

@@ -635,7 +635,7 @@ namespace Content.Server._DV.Mail.EntitySystems
                     || session.State.Status != SessionStatus.InGame)
                     return false;
 
-                // Antagonists (pirates and the like) don't get mail.
+                // Antagonists don't get mail.
                 if (HasComp<MailDisabledComponent>(receiverUid))
                     return false;
                 // End Frontier

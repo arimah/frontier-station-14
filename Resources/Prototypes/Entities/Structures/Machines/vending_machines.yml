@@ -122,8 +122,6 @@
         - Cash
     cashSlotName: cash_slot
     currencyStackType: Credit
-  - type: PirateBountyItem
-    id: VendingMachine
   - type: ItemSlots
   - type: ContainerContainer
     containers:

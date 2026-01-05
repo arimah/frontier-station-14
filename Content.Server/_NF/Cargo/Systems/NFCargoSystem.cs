@@ -68,7 +68,6 @@ public sealed partial class NFCargoSystem : SharedNFCargoSystem
         InitializeConsole();
         InitializeShuttle();
         InitializeTelepad();
-        InitializePirateBounty();
         InitializeTradeCrates();
     }
 

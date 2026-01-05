@@ -38,13 +38,6 @@ frontier-lobby-nfsd-description = The New Frontier Sheriff's Department is the c
    - Apply for a bounty hunting license
    - Report crimes
 
-frontier-lobby-pirate-subtext = Where "X" marks the spot and rum never runs dry.
-frontier-lobby-pirate-description = This is the ultimate hideout where scallywags and pirates gather. Here you can:
-   - Start a pirate crew
-   - Find a crew to join
-   - Socialize with other pirates
- {"["}color=gray]Some of the roles on this station are [color=lightblue]whitelist-only[/color] and require an application in the Discord to be accepted.[/color]
-
 frontier-lobby-edison-subtext = Where the mechanically-minded mingle.
 frontier-lobby-edison-description = Frontier's heavy industrial base. Here you can:
    - Work on engineering and atmospheric projects

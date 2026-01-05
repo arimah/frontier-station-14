@@ -11,7 +11,6 @@
     - WizFedFaction # Frontier
     - BloodCultNF # Frontier
     - NFSyndicate # Frontier
-    - NFPirate # Frontier
     - ExplorersExpeditionNF # Frontier
     - ArtifactConstruct # Frontier
     - StreetGangNF # Frontier
@@ -37,7 +36,6 @@
   - WizFedFaction # Frontier
   - BloodCultNF # Frontier
   - NFSyndicate # Frontier
-  - NFPirate # Frontier
   - ExplorersExpeditionNF # Frontier
   - ArtifactConstruct # Frontier
   - StreetGangNF # Frontier
@@ -86,7 +84,6 @@
   - WizFedFaction # Frontier
   - BloodCultNF # Frontier
   - NFSyndicate # Frontier
-  - NFPirate # Frontier
   - ExplorersExpeditionNF # Frontier
   - ArtifactConstruct # Frontier
   - StreetGangNF # Frontier
@@ -116,7 +113,6 @@
   - Xenoborg
   - WizFedFaction # Frontier
   - BloodCultNF # Frontier
-  - NFPirate # Frontier
   - ExplorersExpeditionNF # Frontier
   - ArtifactConstruct # Frontier
   - StreetGangNF # Frontier
@@ -143,7 +139,6 @@
   - WizFedFaction # Frontier
   - BloodCultNF # Frontier
   - NFSyndicate # Frontier
-  - NFPirate # Frontier
   - ExplorersExpeditionNF # Frontier
   - ArtifactConstruct # Frontier
   - StreetGangNF # Frontier
@@ -171,7 +166,6 @@
   - WizFedFaction # Frontier
   - BloodCultNF # Frontier
   - NFSyndicate # Frontier
-  - NFPirate # Frontier
   - ExplorersExpeditionNF # Frontier
   - ArtifactConstruct # Frontier
   - StreetGangNF # Frontier
@@ -194,7 +188,6 @@
   - Xenoborg
   - WizFedFaction # Frontier
   - BloodCultNF # Frontier
-  - NFPirate # Frontier
   - ExplorersExpeditionNF # Frontier
   - ArtifactConstruct # Frontier
   #- StreetGangNF # Frontier
@@ -241,7 +234,6 @@
   # - WizFedFaction # Frontier
   - BloodCultNF # Frontier
   - NFSyndicate # Frontier
-  - NFPirate # Frontier
   - ExplorersExpeditionNF # Frontier
   - ArtifactConstruct # Frontier
   - StreetGangNF # Frontier
@@ -265,11 +257,10 @@
   - Xeno # rivalry
 
   # cause they are hostile to them
-  - SimpleHostile 
+  - SimpleHostile
   - AllHostile
   - WizFedFaction # Frontier
   - BloodCultNF # Frontier
-  - NFPirate # Frontier
   - ExplorersExpeditionNF # Frontier
   - ArtifactConstruct # Frontier
   - StreetGangNF # Frontier

@@ -44,7 +44,7 @@ public sealed class NFAdventureRuleSystem : GameRuleSystem<NFAdventureRuleCompon
 
     private readonly HttpClient _httpClient = new();
 
-    private readonly ProtoId<GamePresetPrototype> _fallbackPresetID = "NFPirates";
+    private readonly ProtoId<GamePresetPrototype> _fallbackPresetID = "NFAdventure";
     private ISawmill _sawmill = default!;
 
     public sealed class PlayerRoundBankInformation
