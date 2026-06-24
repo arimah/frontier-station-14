@@ -95,39 +95,59 @@ namespace Content.Server.Construction
             // Let's make extra sure this is zero...
             construction.StepIndex = 0;
 
-            // When we handle a node, we're essentially testing the current event interaction against all of this node's
-            // edges' first steps. If any of them accepts the interaction, we stop iterating and enter that edge.
-            for (var i = 0; i < node.Edges.Count; i++)
+            // Frontier: Prioritize TargetEdgeIndex if possible
+            HandleResult result = HandleResult.False;
+            int? resultEdgeIndex = null;
+            // If there is a target edge, always try that first.
+            if (construction.TargetEdgeIndex is { } targetEdgeIndex &&
+                GetEdgeFromNode(node, targetEdgeIndex) is { } targetEdge &&
+                HandleEdge(uid, ev, targetEdge, validation, construction) is var targetResult and not HandleResult.False)
             {
-                var edge = node.Edges[i];
-                if (HandleEdge(uid, ev, edge, validation, construction) is var result and not HandleResult.False)
+                result = targetResult;
+                resultEdgeIndex = targetEdgeIndex;
+            }
+
+            if (resultEdgeIndex is null)
+            {
+                // When we handle a node, we're essentially testing the current event interaction against all of this node's
+                // edges' first steps. If any of them accepts the interaction, we stop iterating and enter that edge.
+                for (var i = 0; i < node.Edges.Count; i++)
                 {
-                    // Only a True result may modify the state.
-                    // In the case of DoAfter, it's only allowed to modify the waiting flag and the current edge index.
-                    // In the case of validated, it should NEVER modify the state at all.
-                    if (result is not HandleResult.True)
+                    var edge = node.Edges[i];
+                    if (HandleEdge(uid, ev, edge, validation, construction) is var edgeResult and not HandleResult.False)
                     {
-                        if (result is HandleResult.DoAfter)
-                        {
-                            construction.EdgeIndex = i;
-                        }
-
-                        return result;
+                        result = edgeResult;
+                        resultEdgeIndex = i;
+                        break;
                     }
-
-                    // If we're not on the same edge as we were before, that means handling that edge changed the node.
-                    if (construction.Node != node.Name)
-                        return result;
-
-                    // If we're still in the same node, that means we entered the edge and it's still not done.
-                    construction.EdgeIndex = i;
-                    UpdatePathfinding(uid, construction);
-
-                    return result;
                 }
             }
 
-            return HandleResult.False;
+            if (resultEdgeIndex is not null)
+            {
+                // Only a True result may modify the state.
+                // In the case of DoAfter, it's only allowed to modify the waiting flag and the current edge index.
+                // In the case of validated, it should NEVER modify the state at all.
+                if (result != HandleResult.True)
+                {
+                    if (result == HandleResult.DoAfter)
+                    {
+                        construction.EdgeIndex = resultEdgeIndex;
+                    }
+
+                    return result;
+                }
+
+                // If we're not on the same edge as we were before, that means handling that edge changed the node.
+                if (construction.Node != node.Name)
+                    return result;
+
+                // If we're still in the same node, that means we entered the edge and it's still not done.
+                construction.EdgeIndex = resultEdgeIndex;
+                UpdatePathfinding(uid, construction);
+            }
+            return result;
+            // End Frontier: Prioritize TargetEdgeIndex if possible
         }
 
         /// <summary>
