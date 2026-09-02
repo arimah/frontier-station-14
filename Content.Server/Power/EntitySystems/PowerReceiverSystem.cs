@@ -166,9 +166,19 @@ namespace Content.Server.Power.EntitySystems
             return !_recQuery.Resolve(uid, ref receiver, false) || receiver.Powered;
         }
 
-        public void SetLoad(ApcPowerReceiverComponent comp, float load)
+        public void SetLoad(EntityUid uid, ApcPowerReceiverComponent comp, float load) // Frontier: add uid (comp.Owner is obsolete)
         {
             comp.Load = load;
+
+            // Frontier: mirror load on ApcPowerReceiverBatteryComponent
+            if (TryComp<ApcPowerReceiverBatteryComponent>(uid, out var apcBattery))
+            {
+                // PowerNetSystem forces ApcPowerReceiverBatteryComponent.IdleLoad to be written
+                // to ApcPowerReceiverComponent.Load. If we don't mirror it, like this, the battery
+                // will entirely override whatever we assign to ApcPowerReceiverComponent.
+                apcBattery.IdleLoad = load;
+            }
+            // End Frontier
         }
 
         public override bool ResolveApc(EntityUid entity, [NotNullWhen(true)] ref SharedApcPowerReceiverComponent? component)

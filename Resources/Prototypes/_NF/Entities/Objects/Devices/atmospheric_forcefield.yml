@@ -1,0 +1,100 @@
+- type: entity
+  name: atmospheric force field projector
+  id: NFAtmosForceFieldProjector
+  description: When activated by a signal, projects a forcefield that stops gas transfer but allows solid objects to pass through.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _NF/Objects/Specific/Atmospherics/atmos_forcefield.rsi
+    drawdepth: FloorObjects
+    layers:
+    - state: projector
+    - state: battery_light
+      visible: false
+      shader: unshaded
+      map: ["battery_warning"]
+    - state: no_power_light
+      visible: false
+      shader: unshaded
+      map: ["no_power_warning"]
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.PowerDeviceVisuals.BatteryPowered:
+        battery_warning:
+          True: { visible: true }
+          False: { visible: false }
+      enum.PowerDeviceVisuals.Powered:
+        no_power_warning:
+          True: { visible: false }
+          False: { visible: true }
+  - type: Transform
+    anchored: true
+  - type: Physics
+    canCollide: false
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+            bounds: "-0.48,-0.48,0.48,-0.40"
+  - type: Anchorable
+    flags: None
+  - type: InteractionOutline
+  - type: Clickable
+  - type: ApcPowerReceiver
+    powerLoad: 250
+  - type: ApcPowerReceiverBattery
+    idleLoad: 250
+    batteryRechargeRate: 150
+    batteryRechargeEfficiency: 0.0 # TEMP: Causes light flickering when it starts charging
+  - type: Battery
+    maxCharge: 180000 # 4 minutes of backup power when turned on, 12 minutes off
+    startingCharge: 180000
+  - type: ExtensionCableReceiver
+  - type: AtmosForceFieldProjector
+  - type: Airtight
+    noAirWhenFullyAirBlocked: false
+    airBlocked: false
+    airBlockedDirection:
+      - South
+  - type: DeviceNetwork
+    deviceNetId: Wireless
+    receiveFrequencyId: BasicDevice
+  - type: WirelessNetworkConnection
+    range: 20 # gotta be close to a button
+  - type: DeviceLinkSink
+    ports:
+      - On
+      - Off
+      - Toggle
+  - type: DeviceLinkSource
+    ports:
+      - PowerLost
+  - type: Tag
+    tags:
+      - SpreaderIgnore
+
+# Note: It's the projector that becomes airtight, *not* the field. That way,
+# if the field gets deleted prematurely due to some nasty bug, the ship's atmos
+# isn't instantly vented.
+
+- type: entity
+  name: atmospheric force field
+  id: NFAtmosForceField
+  description: A force field that stops gas transfer but allows solid objects to pass through.
+  categories: [ HideSpawnMenu, DoNotMap ]
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _NF/Objects/Specific/Atmospherics/atmos_forcefield.rsi
+    state: forcefield
+    drawdepth: OverMobs
+  - type: AtmosForceField
+  - type: PointLight
+    enabled: true
+    radius: 2
+    color: blue
+    offset: 0, -0.35

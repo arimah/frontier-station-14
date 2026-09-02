@@ -1,0 +1,4 @@
+- type: sourcePort
+  id: PowerLost
+  name: signal-port-name-power-lost
+  description: signal-port-description-power-lost
